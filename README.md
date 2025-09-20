@@ -48,3 +48,7 @@ Suggest styling ideas (gradients, hover effects, bubble-style skills)
 Provide code snippets for responsive design and animations
 
 A full breakdown of AI involvement is available in ai-usage-report.md
+
+## Live Deployment
+
+https://fatemahcloudy.github.io/SWE363_Assignment-1/
