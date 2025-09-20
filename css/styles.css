@@ -79,13 +79,20 @@
       gap: 20px;
     }
 
-    .project {
-      background: #fff;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      text-align: center;
-    }
+   .project {
+       background: #fff;
+       padding: 20px;
+       border-radius: 8px;
+       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+       text-align: center;
+       transition: transform 0.3s ease, box-shadow 0.3s ease; /* smooth effect */
+   }
+
+   .project:hover {
+       transform: scale(1.05); /* increase size by 5% */
+       box-shadow: 0 8px 20px rgba(0,0,0,0.2); /* deeper shadow */
+   }
+
 
     .project img {
       width: 100%;
