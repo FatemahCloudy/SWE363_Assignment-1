@@ -93,13 +93,13 @@
       gap: 20px;
     }
 
-<<<<<<< HEAD
+   /* ---------- Header ---------- */
    .project {
        background: var(--light-colour);
-=======
+   }
+
    .project { /*projects are displayed as cards*/
        background: #fff;
->>>>>>> 4e5da553235f2920176dcc6c1a747dc4a9196141
        padding: 20px;
        border-radius: 8px;
        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
@@ -131,15 +131,14 @@
        padding: 0;
    }
 
-<<<<<<< HEAD
    .skills ul li {
        background: var(--primary-colour);
        color: var(--light-colour);
-=======
+   }
+
    .skills ul li { /*the skills are displayed as a cloud of bubbles*/
        background: #795dae;
        color: #fff;
->>>>>>> 4e5da553235f2920176dcc6c1a747dc4a9196141
        border-radius: 50%;
        display: flex;
        align-items: center;
@@ -161,6 +160,7 @@
        height: 120px;
        font-size: 1rem;
    }
+   
    .skills ul li:nth-child(3n+2) {
        width: 100px;
        height: 100px;
@@ -170,7 +170,6 @@
    .skills ul li:hover {
        transform: scale(1.15); /*increase size by 5% when hover*/
    }
-
 
     /* ---------- Contact ---------- */
     form {
@@ -189,15 +188,14 @@
       width: 100%;
     }
 
-<<<<<<< HEAD
     button {
-      background: var(--primary-colour);
-      color: var(--light-colour);
-=======
+        background: var(--primary-colour);
+        color: var(--light-colour);
+    }
+
     button { /*the submit button*/
       background: #795dae;
       color: #fff;
->>>>>>> 4e5da553235f2920176dcc6c1a747dc4a9196141
       border: none;
       padding: 12px;
       border-radius: 6px;
