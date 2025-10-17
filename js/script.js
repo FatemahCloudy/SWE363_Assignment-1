@@ -1,10 +1,3 @@
-// Simple form handling (no backend)
-document.getElementById("contactForm").addEventListener("submit", function(event) {
-    event.preventDefault();
-    alert("Thank you for your message! I'll get back to you soon.");
-    this.reset();
-});
-
 // Personalized Greeting
 const greetingEl = document.getElementById('greeting');
 const username = localStorage.getItem('username') || prompt("Hello! What's your name?");
@@ -28,3 +21,36 @@ function filterProjects(category) {
     });
     document.getElementById('noResults').style.display = visibleCount ? 'none' : 'block';
 }
+
+// contact
+document.addEventListener("DOMContentLoaded", () => {
+    const form = document.getElementById("contactForm");
+    const popup = document.getElementById("popup");
+    const popupMessage = document.getElementById("popupMessage");
+    const closePopup = document.getElementById("closePopup");
+
+    function showPopup(message) {
+        popupMessage.textContent = message;
+        popup.classList.add("show");
+    }
+
+    closePopup.addEventListener("click", () => {
+        popup.classList.remove("show");
+    });
+
+    form.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const message = document.getElementById("message").value.trim();
+
+        if (!name || !email || !message) {
+            showPopup("⚠️ Please fill out all fields.");
+            return;
+        }
+
+        showPopup("Message sent successfully!");
+        form.reset();
+    });
+});
