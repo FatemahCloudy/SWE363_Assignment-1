@@ -23,6 +23,7 @@
 
     h1, h2, h3 {
       margin-bottom: 30px;
+      color: var(--dark-colour);
     }
     h2 {
         background: var(--primary-colour);
@@ -233,6 +234,8 @@
        color: var(--primary-colour);
    }
 
+   /* ---------- Greeting ---------- */
+   #greeting { font-weight: bold; font-size: 1.1rem; color: var(--secondary-colour); margin-bottom: 20px; }
 
    /* ---------- Footer ---------- */
     footer {
