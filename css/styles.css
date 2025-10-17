@@ -93,7 +93,22 @@
       gap: 20px;
     }
 
-   /* ---------- Header ---------- */
+   /* ---------- Projects ---------- */
+   .project-controls {
+       text-align: center; margin-bottom: 20px;
+   }
+
+   .project-controls button {
+       background: var(--primary-colour); color: var(--light-colour); border: none; padding: 8px 16px;
+       border-radius: 6px; margin: 5px; cursor: pointer; transition: 0.3s;
+   }
+
+   .project-controls button:hover {
+       background: var(--secondary-colour);
+   }
+
+   .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+
    .project {
        background: var(--light-colour);
    }
@@ -160,7 +175,7 @@
        height: 120px;
        font-size: 1rem;
    }
-   
+
    .skills ul li:nth-child(3n+2) {
        width: 100px;
        height: 100px;

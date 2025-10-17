@@ -16,3 +16,15 @@ function getGreeting() {
     greetingEl.textContent = `${timeGreeting}, ${username}! Welcome to my portfolio.`;
 }
 getGreeting();
+
+// Filter Projects by Category
+function filterProjects(category) {
+    const projects = document.querySelectorAll('.project');
+    let visibleCount = 0;
+    projects.forEach(proj => {
+        const match = category === 'all' || proj.dataset.category === category;
+        proj.style.display = match ? 'block' : 'none';
+        if (match) visibleCount++;
+    });
+    document.getElementById('noResults').style.display = visibleCount ? 'none' : 'block';
+}
