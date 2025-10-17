@@ -192,7 +192,49 @@
       background: var(--primary-colour);
     }
 
-    /* ---------- Footer ---------- */
+   /* ---------- Floating Labels ---------- */
+   .form-group {
+       position: relative;
+       margin-bottom: 25px;
+   }
+
+   .form-group input,
+   .form-group textarea {
+       width: 100%;
+       padding: 12px;
+       border: 1px solid var(--dark-colour);
+       border-radius: 6px;
+       background: var(--light-colour);
+       color: var(--dark-colour);
+       font-size: 1rem;
+       outline: none;
+   }
+
+   .form-group label {
+       position: absolute;
+       top: 12px;
+       left: 12px;
+       color: #666;
+       font-size: 1rem;
+       pointer-events: none; /* allows clicking input through label */
+       transition: 0.3s ease;
+       background: var(--light-colour);
+       padding: 0 5px;
+   }
+
+   /* Move label when focused or not empty */
+   .form-group input:focus + label,
+   .form-group textarea:focus + label,
+   .form-group input:not(:placeholder-shown) + label,
+   .form-group textarea:not(:placeholder-shown) + label {
+       top: -10px;
+       left: 10px;
+       font-size: 0.85rem;
+       color: var(--primary-colour);
+   }
+
+
+   /* ---------- Footer ---------- */
     footer {
       text-align: center;
       padding: 20px;

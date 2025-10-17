@@ -75,10 +75,22 @@
 <section id="contact">
     <h2>Contact Me</h2>
     <form id="contactForm">
-        <label for="name"></label><input type="text" id="name" placeholder="Your Name" required>
-        <label for="email"></label><input type="email" id="email" placeholder="Your Email" required>
-        <label for="message"></label><textarea id="message" rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
+        <div class="form-group">
+            <input type="text" id="name" placeholder=" " required>
+            <label for="name">Your Name</label>
+        </div>
+
+        <div class="form-group">
+            <input type="email" id="email" placeholder=" " required>
+            <label for="email">Your Email</label>
+        </div>
+
+        <div class="form-group">
+            <textarea id="message" rows="5" placeholder=" " required></textarea>
+            <label for="message">Your Message</label>
+        </div>
+
+        <button type="submit">Send</button>
     </form>
 </section>
 
