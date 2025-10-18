@@ -63,3 +63,14 @@ const observer = new IntersectionObserver(entries => {
     });
 }, { threshold: 0.2 });
 faders.forEach(el => observer.observe(el));
+
+// Dark Mode
+document.addEventListener("DOMContentLoaded", () => {
+    const storedTheme = localStorage.getItem("theme");
+    const systemPrefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+    if (storedTheme === "dark" || (!storedTheme && systemPrefersDark)) {
+        document.body.classList.add("dark-mode");
+    }
+});
+
