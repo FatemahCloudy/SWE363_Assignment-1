@@ -13,12 +13,11 @@ It includes multiple interactive features that enhance the user experience:
 ### Features
 - **About Me** section with a personal introduction and profile image  
 - **Projects** section with hover animations and fixed-size cards  
-- **Skills** section presented as colorful “bubbles” of different sizes  
-- **Fun Facts** section that fetches data dynamically from a **public API**  
-- **Contact Form** with real-time validation and a custom **centered pop-up** confirmation  
+- **Skills** section presented as colourful “bubbles” of different sizes  
+- **Contact Form** with real-time validation and a confirmation message
 - **Fade-in animations** triggered by scroll using the Intersection Observer API  
 - **Automatic Dark/Light Mode** that matches the user’s system settings  
-- Fully **responsive layout** for both desktop and mobile screens  
+- **responsive layout** for both desktop and mobile screens  
 
 ---
 
@@ -48,9 +47,8 @@ It includes multiple interactive features that enhance the user experience:
 
 This project was partially developed with the help of **AI tools (ChatGPT)** for:
 - Generating base templates for HTML, CSS, and JavaScript  
-- Designing interactive features (API fetching, pop-up forms, fade-in animations)  
-- Suggesting improvements for responsiveness and color theme handling  
-- Assisting in bug fixing and optimization for deployment on GitHub Pages  
+- Assistance in deploying interactive features (pop-up forms, fade-in animations)  
+- Assistance on how to make a dark mode option.  
 
 A detailed explanation of AI’s role can be found in **ai-usage-report.md**.
 
@@ -64,19 +62,10 @@ The live version is hosted on **GitHub Pages**:
 ---
 
 ## Technologies Used
-- **HTML5** for structure  
-- **CSS3** for design, gradients, and transitions  
+- **HTML** for structure  
+- **CSS** for design, gradients, and transitions  
 - **JavaScript (ES6)** for interactivity and animations  
 - **Intersection Observer API** for scroll-based animations  
-- **Fetch API** for dynamic content loading  
 - **GitHub Pages** for deployment  
-
----
-
-## Contact
-
-Feel free to reach out or explore more projects!  
-- Email: [your-email@example.com]  
-- Portfolio: [Your Portfolio URL]  
 
 ---
